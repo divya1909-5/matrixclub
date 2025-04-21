@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matrix Club Notices</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .register-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #dc3545;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .register-button:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="WhatsApp Image 2025-04-20 at 15.00.25_68ddf759.jpg" alt="logo">
+      <h1>Matrix Club</h1>
+    </div>
+    <button id="themeToggle" onclick="document.body.classList.toggle('dark')">
+      Toggle Theme
+    </button>
+  </header>
+
+  <div class="container">
+    <h2>Club Notices</h2>
+    <div class="buttons">
+      <button onclick="showSection('announcements', this)" class="active">Announcements</button>
+      <button onclick="showSection('events', this)">Events</button>
+      <button onclick="showSection('updates', this)">Updates</button>
+      <button onclick="showSection('more', this)">More</button>
+    </div>
+
+    <div id="announcements" class="notices active">
+      <div class="card info">
+        <h3>Web Development Class</h3>
+        <p>Next class: Friday at 3 PM in Lab 3</p>
+        <p>Topic: HTML,CSS,JS</p>
+        <span class="date">Posted: April 19, 2025</span>
+      </div>
+      <div class="card success">
+        <h3>HackerRank Results</h3>
+        <p>Congratulations to the winners!</p>
+        <p>1st: Divya Sree (95%)</p>
+        <p>2nd: Roshani (89%)</p>
+        <p>3rd: Alice (85%)</p>
+        <span class="date">Posted: April 18, 2025</span>
+      </div>
+      <div class="card">
+        <h3>Club Meeting</h3>
+        <p>Monthly meeting this Friday at 5 PM.</p>
+        <p>Agenda: Upcoming events planning</p>
+        <span class="date">Posted: April 17, 2025</span>
+      </div>
+    </div>
+
+    <div id="events" class="notices">
+      <div class="card warning">
+        <h3>CodeChef Challenge
+          <a href="https://www.codechef.com" target="_blank" class="platform-link">Visit</a>
+        </h3>
+        <p>Date: May 5, 2025</p>
+        <p>Duration: 3 hours</p>
+        <div class="participants">Participants: 42 members</div>
+        <span class="date">Posted: April 15, 2025</span>
+      </div>
+      <div class="card error">
+        <h3>HackerRank Contest
+          <a href="https://www.hackerrank.com" target="_blank" class="platform-link">Visit</a>
+        </h3>
+        <p>Date: May 12, 2025</p>
+        <p>Topics: Algorithms & Data Structures</p>
+        <div class="participants">Participants: 35 members</div>
+        <span class="date">Posted: April 14, 2025</span>
+      </div>
+      <div class="card success">
+        <h3>LeetCode Weekly
+          <a href="https://leetcode.com" target="_blank" class="platform-link">Visit</a>
+        </h3>
+        <p>Every Saturday at 10 AM</p>
+        <p>Next topic: Dynamic Programming</p>
+        <div class="participants">Average participants: 28 members</div>
+        <span class="date">Posted: April 12, 2025</span>
+      </div>
+    </div>
+
+    <div id="updates" class="notices">
+      <div class="card info">
+        <h3>Job Opportunities</h3>
+        <p>3 new internship positions available</p>
+        <p>Deadline: May 1, 2025</p>
+        <span class="date">Posted: April 16, 2025</span>
+      </div>
+      <div class="card">
+        <h3>Student Interaction</h3>
+        <p>Meet with juniors session on April 25</p>
+        <p>Share your experience and tips</p>
+        <span class="date">Posted: April 13, 2025</span>
+      </div>
+      <div class="card warning">
+        <h3>System Maintenance</h3>
+        <p>April 22, 2 AM - 6 AM</p>
+        <p>Club portal will be unavailable</p>
+        <span class="date">Posted: April 11, 2025</span>
+      </div>
+    </div>
+
+    <div id="more" class="notices">
+      <div class="card success">
+        <h3>Club project</h3>
+        <p>Build a Portfolio Site for Students</p>
+        <span class="date">Posted: April 10, 2025</span>
+      </div>
+      <div class="card info">
+        <h3>Additional resources
+          <a href="https://www.hackerrank.com" target="_blank" class="platform-link">Visit</a>
+        </h3>
+        <p>New coding challenges added</p>
+        <p>Every friday 8pm</p>
+        <span class="date">Posted: April 9, 2025</span>
+      </div>
+      <div class="card error">
+        <h3>Exclusive Event</h3>
+        <p>For active members only</p>
+        <p>Details will be emailed</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkQLL5MkglwyCk24NBI22GuLakRgMC5-spUpR7c99f3PHwEg/viewform?usp=dialog" target="_blank" class="register-button">Register</a>
+        <span class="date">Posted: April 8, 2025</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Follow us:
+      <a href="https://www.linkedin.com/company/thematrixclub/">LinkedIn</a> |
+      <a href="#">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
