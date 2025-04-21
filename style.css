@@ -107,4 +107,19 @@
     button { width: 100%; max-width: 250px; }
     header { flex-direction: column; gap: 1rem; }
   }
+    .register-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #dc3545;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .register-button:hover {
+      background-color: #c82333;
+    }
+  
   
